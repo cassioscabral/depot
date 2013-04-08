@@ -5,12 +5,13 @@
 .products {
 	table {
 		border-collapse: collapse;
+		tr td {
+			padding: 5px;
+			vertical-align: top;
+		}
 	}
 
-	table tr td {
-		padding: 5px;
-		vertical-align: top;
-	}
+
 
 	.list_image {
 		width: 60px;
