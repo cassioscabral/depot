@@ -38,7 +38,7 @@ class LineItemsControllerTest < ActionController::TestCase
     patch :update, id: @line_item, line_item: { product_id: @line_item.product_id }
     assert_redirected_to line_item_path(assigns(:line_item))
   end
-
+  / n destroy mais um line item completo sem ter um carrinho
   test "should destroy line_item" do
     assert_difference('LineItem.count', -1) do
       delete :destroy, id: @line_item
@@ -46,6 +46,7 @@ class LineItemsControllerTest < ActionController::TestCase
 
     assert_redirected_to line_items_path
   end
+  /
 
   test "should create line item via ajax" do
     assert_difference('LineItem.count') do

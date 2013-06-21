@@ -1,0 +1,2 @@
+$('#cart').html("<%= escape_javascript render(@cart) %>");
+if ($('#cart tr').length == 1){ $('#cart').hide('blind', 500); } //length == 1 pois o Total está dentro de um tr, criado ao dar o primeiro create em um line item
