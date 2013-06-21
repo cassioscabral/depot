@@ -59,7 +59,7 @@ class CartsController < ApplicationController
     session[:cart_id] = nil;
     respond_to do |format|
       format.html { redirect_to store_url}
-      format.js { redirect_to store_url} #responder em JS para poder aplicar o efeito de blind
+      format.js {} #responder em JS para poder aplicar o efeito de blind
       format.json { head :no_content }
     end
   end
