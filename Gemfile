@@ -36,3 +36,8 @@ gem 'jbuilder', '~> 1.0.1'
 
 # To use debugger
 # gem 'debugger'
+group :production do
+	gem 'mysql2'
+end
+gem 'bcrypt-ruby', '~> 3.0.0'
+gem 'rvm-capistrano', group: :development
